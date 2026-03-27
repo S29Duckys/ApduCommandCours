@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Classes et Objets.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Classes et Objets"
+              "title": "README"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Classes et Objets.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour 01 - Classes et Objets"
+              "title": "Rétrolien pour README"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Classes et Objets.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Liens sortants de 01 - Classes et Objets"
+              "title": "Liens sortants de README"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Classes et Objets.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de 01 - Classes et Objets"
+              "title": "Plan de README"
             }
           }
         ]
@@ -185,8 +185,9 @@
   },
   "active": "affed719a7eda7ff",
   "lastOpenFiles": [
-    "Claude/CLAUDE.md",
     "01 - Classes et Objets.md",
+    "README.md",
+    "Claude/CLAUDE.md",
     "01 - Classes et Objets.md.tmp.18988.1774627166093",
     "Sans titre.base",
     "Claude",
