@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "02 - Constructeurs et this.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "02 - Constructeurs et this"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "02 - Constructeurs et this.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour README"
+              "title": "Rétrolien pour 02 - Constructeurs et this"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "02 - Constructeurs et this.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Liens sortants de README"
+              "title": "Liens sortants de 02 - Constructeurs et this"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "02 - Constructeurs et this.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de README"
+              "title": "Plan de 02 - Constructeurs et this"
             }
           }
         ]
@@ -186,6 +186,9 @@
   "active": "affed719a7eda7ff",
   "lastOpenFiles": [
     "01 - Classes et Objets.md",
+    "02 - Constructeurs et this.md",
+    "README.md.tmp.18988.1774633160348",
+    "02 - Constructeurs et this.md.tmp.18988.1774633140085",
     "README.md",
     "Claude/CLAUDE.md",
     "01 - Classes et Objets.md.tmp.18988.1774627166093",

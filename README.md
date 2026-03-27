@@ -7,7 +7,7 @@ Vault Obsidian contenant des cours progressifs pour apprendre Java, Java Card, l
 | #   | Cours                             | Statut |
 | --- | --------------------------------- | ------ |
 | 01  | Classes et Objets                 | ✅      |
-| 02  | Constructeurs et `this`           | ⏳      |
+| 02  | Constructeurs et `this`           | ✅      |
 | 03  | Tableaux et types de données      | ⏳      |
 | 04  | Héritage                          | ⏳      |
 | 05  | Interfaces et classes abstraites  | ⏳      |
