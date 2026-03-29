@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 - Tableaux et types de donnees.md",
+                "file": "Index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 - Tableaux et types de donnees"
+              "title": "Index"
             }
           }
         ]
@@ -185,18 +185,23 @@
   },
   "active": "affed719a7eda7ff",
   "lastOpenFiles": [
-    "02 - Constructeurs et this.md",
-    "README.md.tmp.18988.1774744930962",
-    "03 - Tableaux et types de donnees.md",
-    "03 - Tableaux et types de donnees.md.tmp.18988.1774744920142",
+    "README.md.tmp.18988.1774746462788",
+    "Cours/01 - Classes et Objets.md",
+    "Index.md",
+    "Index.md.tmp.18988.1774746400631",
+    "README.md.tmp.18988.1774746395505",
+    "Cours/03 - Tableaux et types de donnees.md",
+    "Cours",
     "README.md",
-    "01 - Classes et Objets.md",
+    "Cours/02 - Constructeurs et this.md",
+    "Sans titre.md",
+    "Code",
+    "03 - Tableaux et types de donnees.md.tmp.18988.1774745922307",
+    "01 - Classes et Objets.md.tmp.18988.1774745839097",
+    "README.md.tmp.18988.1774744930962",
+    "03 - Tableaux et types de donnees.md.tmp.18988.1774744920142",
     "README.md.tmp.18988.1774633160348",
     "02 - Constructeurs et this.md.tmp.18988.1774633140085",
-    "Claude/CLAUDE.md",
-    "01 - Classes et Objets.md.tmp.18988.1774627166093",
-    "Sans titre.base",
-    "Claude",
-    "CLAUDE.md.tmp.18988.1774626934200"
+    "Claude/CLAUDE.md"
   ]
 }

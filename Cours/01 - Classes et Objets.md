@@ -29,6 +29,8 @@ C'est tout ! Tu viens de créer une classe. Elle dit :
 - chaque voiture aura une `couleur` (du texte → `String`)
 - chaque voiture aura une `vitesse` (un nombre → `int`)
 
+> `String` et `int` sont des **types de données**. On les explique en détail dans [[03 - Tableaux et types de donnees]].
+
 ---
 
 ## Créer un objet
@@ -74,9 +76,11 @@ Voiture maVoiture = new Voiture();
 | `Voiture`   | le type (c'est une Voiture)      |
 | `maVoiture` | le nom qu'on donne à notre objet |
 | `new`       | "crée un nouvel objet"           |
-| `Voiture()` | appelle le plan de construction  |
+| `Voiture()` | appelle le plan de construction (le [[02 - Constructeurs et this|constructeur]]) |
 
 C'est comme dire : *"Crée-moi une nouvelle Voiture et appelle-la maVoiture"*
+
+> Ici on donne les valeurs une par une (3 lignes). C'est un peu long. Dans, tu apprendras à tout initialiser en **une seule ligne** grâce au **constructeur**  [[02 - Constructeurs et this]].
 
 ---
 
@@ -102,6 +106,8 @@ public class Main {
 ```
 
 Chaque objet a **ses propres valeurs**. Changer la couleur de `voiture1` ne change pas celle de `voiture2`.
+
+> Quand tu auras beaucoup d'objets, tu pourras les ranger dans un [[03 - Tableaux et types de donnees|tableau]] pour les parcourir avec une boucle.
 
 ---
 
@@ -183,6 +189,8 @@ maVoiture.accelerer(50);  // Vitesse : 80
 
 Le `int ajout` entre parenthèses, c'est le **paramètre**. Quand tu appelles `accelerer(30)`, le 30 va dans `ajout`.
 
+> Dans [[02 - Constructeurs et this]], tu verras que quand le paramètre a le **même nom** que l'attribut, on utilise le mot-clé `this` pour les différencier.
+
 ---
 
 ## Méthodes qui renvoient une valeur
@@ -224,7 +232,10 @@ Voiture rouge à 80 km/h
 | `void` | la méthode ne renvoie rien |
 | `String` | la méthode renvoie du texte |
 | `int` | la méthode renvoie un nombre entier |
+| `boolean` | la méthode renvoie vrai ou faux |
 | `return` | "voici le résultat" |
+
+> Pour la liste complète des types (`int`, `double`, `byte`, `boolean`...), voir [[03 - Tableaux et types de donnees#Les types primitifs]].
 
 ---
 
@@ -270,6 +281,8 @@ public class Main {
 }
 ```
 
+> Tu remarques qu'on initialise chaque étudiant en 3 lignes. Avec un [[02 - Constructeurs et this|constructeur]], on pourrait écrire directement `new Etudiant("Karim", 20, 14.5)`.
+
 ---
 
 ## Résumé
@@ -282,6 +295,9 @@ public class Main {
 | **Méthode** | Une action que l'objet peut faire | `void accelerer() { }` |
 | **Paramètre** | Une info donnée à la méthode | `void accelerer(int ajout)` |
 | **return** | Renvoie un résultat | `return vitesse;` |
+
+### Prochaine étape
+→ [[02 - Constructeurs et this]] : apprendre à initialiser un objet en une seule ligne
 
 ---
 

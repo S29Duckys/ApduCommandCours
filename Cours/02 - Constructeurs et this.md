@@ -2,7 +2,7 @@
 
 ## Le problème
 
-Dans le cours [[01 - Classes et Objets]], on faisait ça pour créer un objet :
+Dans [[01 - Classes et Objets]], on faisait ça pour créer un objet :
 
 ```java
 Voiture maVoiture = new Voiture();
@@ -16,10 +16,10 @@ C'est 3 lignes juste pour créer une voiture. Et si tu oublies une ligne, ton ob
 
 ## C'est quoi un constructeur ?
 
-Un constructeur, c'est une **méthode spéciale** qui s'exécute automatiquement quand tu fais `new`. Il sert à **initialiser** l'objet dès sa création.
+Un constructeur, c'est une [[01 - Classes et Objets#Les méthodes (les actions)|méthode]] spéciale qui s'exécute automatiquement quand tu fais `new`. Il sert à **initialiser** l'[[01 - Classes et Objets#Créer un objet|objet]] dès sa création.
 
 ### Règles d'un constructeur :
-- Il a **le même nom que la classe**
+- Il a **le même nom que la [[01 - Classes et Objets#C'est quoi une classe ?|classe]]**
 - Il n'a **pas de type de retour** (même pas `void`)
 
 ```java
@@ -55,7 +55,7 @@ Quand tu écris `new Voiture("rouge", 0)`, Java appelle le constructeur avec `c 
 
 ## Le mot-clé `this`
 
-Dans le constructeur au-dessus, on a utilisé `c` et `v` comme noms de paramètres. Mais c'est pas très clair. On préférerait écrire `couleur` et `vitesse` directement.
+Dans le constructeur au-dessus, on a utilisé `c` et `v` comme noms de [[01 - Classes et Objets#Méthodes avec paramètres|paramètres]]. Mais c'est pas très clair. On préférerait écrire `couleur` et `vitesse` directement.
 
 Le problème :
 
@@ -65,7 +65,7 @@ Voiture(String couleur, int vitesse) {
 }
 ```
 
-Java ne sait plus si `couleur` c'est l'attribut ou le paramètre. C'est là que **`this`** intervient.
+Java ne sait plus si `couleur` c'est l'[[01 - Classes et Objets#Ta première classe|attribut]] ou le paramètre. C'est là que **`this`** intervient.
 
 ### `this` = "moi, l'objet actuel"
 
@@ -121,7 +121,9 @@ public class Main {
 }
 ```
 
-C'est beaucoup plus propre que de faire 3 lignes par étudiant.
+C'est beaucoup plus propre que de faire 3 lignes par étudiant comme dans [[01 - Classes et Objets#Exemple complet récapitulatif]].
+
+> Les types `String`, `int` et `double` utilisés ici sont détaillés dans [[03 - Tableaux et types de donnees#Les types primitifs]].
 
 ---
 
@@ -208,7 +210,7 @@ Java choisit le bon constructeur en regardant **le nombre et le type** des param
 
 ## `this` dans les méthodes aussi
 
-`this` ne sert pas que dans les constructeurs. Tu peux l'utiliser dans n'importe quelle méthode pour parler de l'objet actuel :
+`this` ne sert pas que dans les constructeurs. Tu peux l'utiliser dans n'importe quelle [[01 - Classes et Objets#Les méthodes (les actions)|méthode]] pour parler de l'objet actuel :
 
 ```java
 class Voiture {
@@ -263,15 +265,18 @@ Quand tu appelles `ferrari.estPlusRapideQue(twingo)` :
 | **Constructeur par défaut** | Créé automatiquement si tu n'en écris aucun | `Voiture() { }` |
 | **Surcharge** | Plusieurs constructeurs avec des paramètres différents | `Voiture()`, `Voiture(String c)` |
 
+### Prochaine étape
+→ [[03 - Tableaux et types de donnees]] : apprendre les types de données et les tableaux
+
 ---
 
 ## Exercice
 
-Crée une classe `CompteBancaire` avec :
-- Attributs : `proprietaire` (String), `solde` (double)
+Crée une [[01 - Classes et Objets#C'est quoi une classe ?|classe]] `CompteBancaire` avec :
+- [[01 - Classes et Objets#Ta première classe|Attributs]] : `proprietaire` (String), `solde` (double)
 - Un constructeur qui prend le nom et le solde initial
-- Un constructeur qui prend seulement le nom (solde = 0 par défaut)
-- Méthode `deposer(double montant)` : ajoute au solde
+- Un constructeur qui prend seulement le nom (solde = 0 par défaut) → c'est la **surcharge**
+- [[01 - Classes et Objets#Les méthodes (les actions)|Méthode]] `deposer(double montant)` : ajoute au solde
 - Méthode `retirer(double montant)` : retire du solde seulement si le solde est suffisant, sinon affiche "Solde insuffisant"
 - Méthode `afficher()` : affiche le propriétaire et le solde
 

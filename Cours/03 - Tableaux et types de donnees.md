@@ -2,7 +2,7 @@
 
 ## Les types primitifs
 
-En Java, il y a deux grandes familles de types : les **primitifs** et les **objets**. Tu connais déjà certains primitifs sans le savoir.
+En Java, il y a deux grandes familles de types : les **primitifs** et les **[[01 - Classes et Objets#Créer un objet|objets]]**. Tu connais déjà certains primitifs sans le savoir (on les a utilisés dans [[01 - Classes et Objets]] et [[02 - Constructeurs et this]]).
 
 ### Les 8 types primitifs :
 
@@ -21,7 +21,7 @@ En Java, il y a deux grandes familles de types : les **primitifs** et les **obje
 - `int` pour les nombres entiers
 - `double` pour les nombres à virgule
 - `boolean` pour vrai/faux
-- `byte` (très important en **Java Card** plus tard, car les cartes à puce travaillent avec des octets)
+- `byte` (très important en **Java Card** plus tard, car les cartes à puce communiquent en octets)
 
 ---
 
@@ -32,7 +32,7 @@ En Java, il y a deux grandes familles de types : les **primitifs** et les **obje
 | `int`, `double`, `boolean`... | `String`, `Voiture`, `Etudiant`... |
 | Stocke directement la valeur | Stocke une **référence** (une adresse) |
 | Commence par une **minuscule** | Commence par une **majuscule** |
-| Pas de méthodes | A des méthodes |
+| Pas de [[01 - Classes et Objets#Les méthodes (les actions)|méthodes]] | A des méthodes |
 
 ```java
 int a = 5;              // a contient directement 5
@@ -48,7 +48,7 @@ b = 10;
 System.out.println(a);  // 5 (a n'a pas changé)
 ```
 
-Avec les primitifs, chacun a **sa propre copie**. On verra plus tard que les objets ne fonctionnent pas pareil.
+Avec les primitifs, chacun a **sa propre copie**. On verra plus tard que les [[01 - Classes et Objets#Créer un objet|objets]] ne fonctionnent pas pareil.
 
 ---
 
@@ -96,7 +96,7 @@ int[] notes = {15, 12, 18, 9, 14};
 System.out.println(notes.length);  // 5
 ```
 
-`length` n'a **pas de parenthèses** (c'est pas une méthode, c'est un attribut).
+`length` n'a **pas de parenthèses** (c'est pas une [[01 - Classes et Objets#Les méthodes (les actions)|méthode]], c'est un [[01 - Classes et Objets#Ta première classe|attribut]]).
 
 ---
 
@@ -166,7 +166,7 @@ C'est un **cast** (conversion). Sans ça, `68 / 5` donnerait `13` (division enti
 
 ## Tableaux d'objets
 
-Les tableaux ne sont pas limités aux primitifs. Tu peux faire des tableaux d'objets :
+Les tableaux ne sont pas limités aux primitifs. Tu peux faire des tableaux d'[[01 - Classes et Objets#Créer un objet|objets]] :
 
 ```java
 class Etudiant {
@@ -178,7 +178,11 @@ class Etudiant {
         this.moyenne = moyenne;
     }
 }
+```
 
+> Ici on utilise un [[02 - Constructeurs et this#C'est quoi un constructeur ?|constructeur]] avec [[02 - Constructeurs et this#Le mot-clé `this`|`this`]] pour initialiser chaque étudiant en une ligne.
+
+```java
 public class Main {
     public static void main(String[] args) {
         Etudiant[] classe = new Etudiant[3];
@@ -220,7 +224,7 @@ for (byte b : commande) {
 
 > Ne t'inquiète pas si l'hexadécimal te semble compliqué pour l'instant. On y reviendra en détail dans les cours sur les commandes APDU.
 
-Le `(byte)` est nécessaire car `0xA4` est un `int` par défaut, et il faut le convertir en `byte`.
+Le `(byte)` est un **cast** (comme le `(double)` vu plus haut) : `0xA4` est un `int` par défaut, et il faut le convertir en `byte`.
 
 ---
 
@@ -262,21 +266,24 @@ for (int i = 0; i < notes.length; i++) {
 | Concept | C'est quoi | Exemple |
 |---------|-----------|---------|
 | **Type primitif** | Valeur simple stockée directement | `int`, `double`, `byte`, `boolean` |
-| **Type objet** | Référence vers un objet | `String`, `Voiture` |
+| **Type objet** | Référence vers un [[01 - Classes et Objets#Créer un objet|objet]] | `String`, `Voiture` |
 | **Tableau** | Conteneur de taille fixe, même type | `int[] tab = {1, 2, 3};` |
 | **Index** | Position dans le tableau (commence à 0) | `tab[0]` = premier élément |
 | **length** | Taille du tableau | `tab.length` |
 | **Cast** | Conversion d'un type vers un autre | `(double) somme` |
 | **for-each** | Parcourir sans index | `for (int x : tab)` |
 
+### Prochaine étape
+→ [[04 - Heritage]] : apprendre à créer des classes qui héritent d'autres classes
+
 ---
 
 ## Exercice
 
-Crée une classe `Classe` (comme une classe d'école) avec :
+Crée une [[01 - Classes et Objets#C'est quoi une classe ?|classe]] `Classe` (comme une classe d'école) avec :
 - Attribut : `eleves` (un tableau d'`Etudiant`)
-- Constructeur qui reçoit le tableau d'étudiants
-- Méthode `moyenneGenerale()` : renvoie la moyenne de tous les étudiants
+- [[02 - Constructeurs et this#C'est quoi un constructeur ?|Constructeur]] qui reçoit le tableau d'étudiants
+- [[01 - Classes et Objets#Méthodes qui renvoient une valeur|Méthode]] `moyenneGenerale()` : renvoie la moyenne de tous les étudiants
 - Méthode `meilleurEleve()` : renvoie l'`Etudiant` qui a la meilleure moyenne
 - Méthode `afficher()` : affiche tous les étudiants et leur moyenne
 

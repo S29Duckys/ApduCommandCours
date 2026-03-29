@@ -25,11 +25,16 @@ Vault Obsidian contenant des cours progressifs pour apprendre Java, Java Card, l
 ## Structure
 
 ```
-├── 01 - Classes et Objets.md
-├── 02 - Constructeurs et this.md
-├── ...
-├── CLAUDE.md
+├── Index.md                          ← page d'accueil Obsidian
+├── Cours/
+│   ├── 01 - Classes et Objets.md
+│   ├── 02 - Constructeurs et this.md
+│   ├── 03 - Tableaux et types de donnees.md
+│   ├── 04 - Heritage.md
+│   └── ...
+├── Claude/
+│   └── CLAUDE.md
 └── README.md
 ```
 
-Chaque fichier est un cours autonome avec des explications, des exemples de code et un exercice.
+Chaque fichier est un cours autonome avec des explications, des exemples de code et un exercice. Les notes sont liées entre elles avec des wikilinks Obsidian.
